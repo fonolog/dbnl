@@ -81,12 +81,12 @@ for s in sonnetten:
     
 
         if key in rhyme_schemes:
-                rhyme_schemes[key] += 1
-        else: rhyme_schemes[key] = 1
+                rhyme_schemes[key] += [s]
+        else: rhyme_schemes[key] = [s]
 
 for r in sorted(rhyme_schemes):
-    if rhyme_schemes[r]> 10:
-        print (r, rhyme_schemes[r])
+    if len(rhyme_schemes[r])> 10:
+        print (r, len(rhyme_schemes[r]))
 
 print (returnstring, file=open("canoniekesonnetten.txt", "w"))
 
