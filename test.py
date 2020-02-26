@@ -11,22 +11,18 @@ def rhymes(m):
         if vowel(letter):
             yield m[number:]
         # take care of some spelling variation (final devoicing)
-        if m[-1] == 'd':
-            yield m[number:-1]+'t'
-        if m[-1] == 'b':
-            yield m[number:-1]+'p'
-        if m[-1] == 'v':
-            yield m[number:-1]+'f'
-        if m[-1] == 'z':
-            yield m[number:-1]+'s'
+        final_devoicing = {'d':'t', 'b':'p', 'v':'f', 'z':'s', 'g': 'ch'}
+        if m[-1] in final_devoicing:
+            yield m[number:-1]+final_devoicing[m[-1]]
         #ou = au
-        if m[number] == 'o' and len(m) < number+1 and m[number+1]== 'u':
+        if letter == 'o' and len(m) < number+1 and m[number+1]== 'u':
             yield m[:number]+'a'+m[number+1:]
         #ei = ij
-        if m[number] == 'i' and len(m) < number+1 and m[number+1]== 'i':
+        if letter == 'i' and len(m) < number+1 and m[number+1]== 'i':
             yield m[:number]+'ij'+m[number+2:]
-       
-
+        diacritics =  {'ê': 'e', 'â':'a', 'ô':'o', 'û':'u', 'î': 'i', 'ë':'e', 'ä':'a', 'ö':'o', 'ü':'u', 'ï':'i', 'é':'e', 'á':'a', 'ó':'o', 'ú':'u'}
+        if letter in diacritics:
+            yield diacritics[letter]+m[number+1:]
 
 def rijmschema(m,n, my_rhymewords={}):
     potential_rhymeword  = '', None
