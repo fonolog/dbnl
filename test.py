@@ -59,32 +59,32 @@ def abstract_scheme (rhymescheme):
 
         return abstract            
 
-
-
-rhyme_schemes = {}
-returnstring = ''
-
-for s in sonnetten:
-
-    if (len([l for l in sonnetten[s]['poem']['lg']['l'] if l])) == 14:
-        #which words rhyme with each other?
-        rhymescheme = rhyming_pairs(sonnetten[s])
-
-        #create rhymescheme 
-        key = "".join(abstract_scheme(rhymescheme))
-        if key == "abbaabbaccdeed":
-            returnstring += str(sonnetten[s]['author'])+'\n'+str(sonnetten[s]['appeared in'])+'\n'+sonnetten[s]['dbnl file']+'\n'+sonnetten[s]['ascii text poem']+'\n\n'
-    
-
-        if key in rhyme_schemes:
-                rhyme_schemes[key] += [s]
-        else: rhyme_schemes[key] = [s]
-
 if __name__ == '__main__':
+
+
+    rhyme_schemes = {}
+    returnstring = ''
+
+    for s in sonnetten:
+
+        if (len([l for l in sonnetten[s]['poem']['lg']['l'] if l])) == 14:
+            #which words rhyme with each other?
+            rhymescheme = rhyming_pairs(sonnetten[s])
+
+            #create rhymescheme 
+            key = "".join(abstract_scheme(rhymescheme))
+            if key[:14] == "abbaabbaccdeed":
+                returnstring += str(sonnetten[s]['author'])+'\n'+str(sonnetten[s]['appeared in'])+'\n'+sonnetten[s]['dbnl file']+'\n'+sonnetten[s]['ascii text poem']+'\n\n'
+        
+
+            if key in rhyme_schemes:
+                    rhyme_schemes[key] += [s]
+            else: rhyme_schemes[key] = [s]
+
 
     for r in sorted(rhyme_schemes):
         if len(rhyme_schemes[r])> 10:
             print (r, len(rhyme_schemes[r]))
 
-    print (returnstring, file=open("canoniekesonnetten.txt", "w"))
+    print (returnstring, file=open("sonnetten.txt", "w"))
 
