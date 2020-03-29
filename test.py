@@ -15,10 +15,10 @@ def rhymes(m):
         if m[-1] in final_devoicing:
             yield m[number:-1]+final_devoicing[m[-1]]
         #ou = au
-        if letter == 'o' and len(m) < number+1 and m[number+1]== 'u':
+        if letter == 'o' and len(m) > number+1 and m[number+1]== 'u':
             yield m[:number]+'a'+m[number+1:]
         #ei = ij
-        if letter == 'i' and len(m) < number+1 and m[number+1]== 'i':
+        if letter == 'e' and len(m) > number+1 and m[number+1]== 'i':
             yield m[:number]+'ij'+m[number+2:]
         diacritics =  {'ê': 'e', 'â':'a', 'ô':'o', 'û':'u', 'î': 'i', 'ë':'e', 'ä':'a', 'ö':'o', 'ü':'u', 'ï':'i', 'é':'e', 'á':'a', 'ó':'o', 'ú':'u'}
         if letter in diacritics:
