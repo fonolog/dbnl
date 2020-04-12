@@ -104,9 +104,9 @@ BEKINDE: gheninde
 BEKINNEN: binnen
 BELAGHEN: maghen
 BELGHEDI: mi
-BELIJN: zijn
+BELIJN: zijn zijn
 BELIJNS: zijns
-BELINE: pine
+BELINE: stillekine pine
 BELOEPEN: becoepen
 BELOKEN: tebroken
 BELOPEN: becoepen
@@ -182,9 +182,9 @@ BROCHT: bedocht mocht
 BROCHTE: mochte wrochte haghedochte aghedochte mochte
 BROEDE: vroede hoede
 BRUGGHE: rugghe
-BRUNE: crune
+BRUNE: tune crune crune crune cloestercrune crune
 BRUNEEL: butseel
-BRUUN: tuun
+BRUUN: tuun tuun
 BUSANT: tehant
 BUTSEEL: bruneel rosseel
 CAF: af
@@ -542,8 +542,8 @@ GHI: desen vry bi mi
 GHIER: hier
 GHINC: ontfinc jonghelinc hinc coninc hinc
 GHINGHEN: bedwinghen zameninghen dinghen
-GOD: zot
-GODE: bode
+GOD: ghebod spot zot
+GODE: bode ghebode ghebode bode
 GOEDERTIERE: dieren
 GOEDERTIEREN: dieren
 GOEM: boem boem oem oem
@@ -612,7 +612,7 @@ HEM: bem bem nem bem bem nem bem bem bem bem
 HEME: neme
 HERMANNE: tebannen
 HERMELIJNE: mine
-HERMELINE: pine
+HERMELINE: welpekine pine pine lijne pine pine
 HERMELINEN: minen welpkinen welpkinen welpkinen
 HERMIJTE: quijte
 HERSENDEN: benden
@@ -665,7 +665,7 @@ HOVE: love love gheloven love orlove gheloven love
 HOVESSCHEDEN: ghebeden
 HU: nu nu nu nu nu nu nu nu nu
 HULDE: sculde sculde sculde
-HULSTERLOE: soe
+HULSTERLOE: vroe soe
 HUTEBROCHT: mesrocht
 HUUS: manpertus manpertus muus muus manpertuus manpertuus manpertuus spiritus dominus manpertuus
 HUUSE: muse
@@ -693,7 +693,7 @@ JONNE: zonne
 JONNEN: begonnen
 JONSTE: conste
 JORDANE: wane
-JULOCKE: rocke
+JULOCKE: rocke rocke rocke
 JULOCKEN: clocken
 KARIJNEN: pinen
 KEER: tsjaermeer
@@ -795,9 +795,9 @@ MAN: nam ghewan ban can stan an dan an dan can
 MANGHELINGHE: dinghen
 MANIEREN: losengieren
 MANPERTUS: huus huus
-MANPERTUUS: huus
+MANPERTUUS: huus huus huus huus
 MARE: hare baren bare ware
-MARTINET: gheset
+MARTINET: gheset vet bet gheset
 MAT: tgat
 MATEN: laten honichraten
 MATER: cater
@@ -1038,10 +1038,10 @@ REBBEN: hebben
 RECHT: knecht plecht echt echt hecht
 RECHTE: knechte knechte
 REYNAERD: vervaert
-REYNAERDE: cuaerde
+REYNAERDE: haerde grongaerde baerde vaerde baerde baerde onvervaerde baerde cuaerde
 REYNAERDINE: gaerdeline
 REYNAERDYE: scampye
-REYNAERT: vaert
+REYNAERT: onvervaert staert waert waert onwaert waert vaert ghewaert vaert waert spaert waert haerwaert waert achterwaert waert waert waert daerwaert vervaert vaert vaert vaert wart waert vaert baert cuaert vaert vaert
 RICHT: stallicht
 RIEDEN: ombieden
 RIEPEN: sliepen
@@ -1515,8 +1515,8 @@ WYSEN: grijsen
 YET: niet niet niet siet niet hiet
 YSENGRIJN: peelgrijn
 YSENGRIJNE: rijme
-YSINGRIJN: peelgrijn peelgrijn
-YSINGRINE: pine
+YSINGRIJN: peelgrijn peelgrijn peelgrijn peelgrijn
+YSINGRINE: pine rijme pine
 ZAC: onghemac
 ZAKE: brake
 ZAMENINGHEN: ghinghen
