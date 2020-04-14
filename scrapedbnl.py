@@ -1,10 +1,14 @@
 #scrapedbnl.py
-'''Script to get all Dutch epub, pdf and xml files collected by DBNL.org '''
+toelichting = '''Dit script haalt epub-bestanden van de pagina's met e-boeken van de DBNL.
+Gebruik deze bestanden alleen voor eigen gebruik, met name onderzoek.
+De gebruiksvoorwaarden van de DBNL van kracht: https://www.dbnl.org/overdbnl/copyright.php'''
+
+print(toelichting)
 
 import requests
 from bs4 import BeautifulSoup
 
-file_formats = ['epub', '.pdf', '.xml'] # extensions (last four characters)
+file_formats = ['epub'] # extensions (last four characters)
 
 for x in range(1,59):
     url='https://www.dbnl.org/titels/titels_ebook.php?s=t&p='+str(x)
